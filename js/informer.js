@@ -22,7 +22,7 @@ var Informer = Class.create({
 Informer.States = {
     Clean: "Informer.States.Clean",
     Dirty: "Informer.States.Dirty"
-}
+};
 
 Informer.Element = Class.create({
     options: {
