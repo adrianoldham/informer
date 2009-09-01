@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>index</title>
+    <script type="text/javascript" charset="utf-8" src="../lib/prototype.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../lib/scriptaculous.js?load=effects"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/informer.js"></script>
+
+    <style type="text/css" media="screen">
+        .clean {
+            color: #999;
+        }
+        
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            <input class="required" title="Input that is required" type="text" />
+            <br/>
+            <textarea title="Testing text area"></textarea>
+        </p>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+    function runTest() {
+        var informer = new Informer("input[type=text], textarea");
+    }
+
+    Event.observe(window, "load", runTest);
+</script>
+
+</html>
